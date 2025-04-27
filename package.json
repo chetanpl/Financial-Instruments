@@ -2,7 +2,7 @@
   "name": "financial-instruments",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chetanpl.github.io/Financial",
+  "homepage": "https://chetanpl.github.io/Financial-Instruments",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/user-event": "^13.5.0",
