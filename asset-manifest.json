@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Financial-instruments/static/css/main.6d9756af.css",
-    "main.js": "/Financial-instruments/static/js/main.a9038acb.js",
-    "static/js/453.1d8a75f3.chunk.js": "/Financial-instruments/static/js/453.1d8a75f3.chunk.js",
-    "index.html": "/Financial-instruments/index.html",
-    "main.6d9756af.css.map": "/Financial-instruments/static/css/main.6d9756af.css.map",
-    "main.a9038acb.js.map": "/Financial-instruments/static/js/main.a9038acb.js.map",
-    "453.1d8a75f3.chunk.js.map": "/Financial-instruments/static/js/453.1d8a75f3.chunk.js.map"
+    "main.css": "/Financial/static/css/main.6d9756af.css",
+    "main.js": "/Financial/static/js/main.d14ab95d.js",
+    "static/js/453.1d8a75f3.chunk.js": "/Financial/static/js/453.1d8a75f3.chunk.js",
+    "index.html": "/Financial/index.html",
+    "main.6d9756af.css.map": "/Financial/static/css/main.6d9756af.css.map",
+    "main.d14ab95d.js.map": "/Financial/static/js/main.d14ab95d.js.map",
+    "453.1d8a75f3.chunk.js.map": "/Financial/static/js/453.1d8a75f3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d9756af.css",
-    "static/js/main.a9038acb.js"
+    "static/js/main.d14ab95d.js"
   ]
 }
