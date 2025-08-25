@@ -19,11 +19,11 @@ WORKDIR /usr/share/nginx/html
 # Remove default content
 RUN rm -rf ./*
 
-# Copy build from builder
-COPY --from=builder /app/build ./
+# Copy build from builder to /Financial-Instruments path
+COPY --from=builder /app/build ./Financial-Instruments
 
-# Expose port
-EXPOSE 4141
+# Expose port 80 in container (we'll map it to 4141 on host)
+EXPOSE 80
 
 # Run Nginx
 CMD ["nginx", "-g", "daemon off;"]
