@@ -14,16 +14,18 @@ RUN npm run build
 
 # Stage 2: Serve with Nginx
 FROM nginx:alpine
-WORKDIR /usr/share/nginx/html
 
-# Remove default content
-RUN rm -rf ./*
+# Remove default Nginx content
+RUN rm -rf /usr/share/nginx/html/*
 
-# Copy build from builder to /Financial-Instruments path
-COPY --from=builder /app/build ./Financial-Instruments
+# Copy React build to /usr/share/nginx/html/Financial-Instruments
+COPY --from=builder /app/build /usr/share/nginx/html/Financial-Instruments
 
-# Expose port 80 in container (we'll map it to 4141 on host)
+# Copy custom Nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose container port 80 (map to host 4141 in docker run)
 EXPOSE 80
 
-# Run Nginx
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
